@@ -8,7 +8,7 @@ body {
   margin: 0px;
 }
 
-h1,h2,h3,p{
+h1,h2,h3,h4,p{
   text-align: center;
 }
 
@@ -27,6 +27,9 @@ a{
   margin: 0;
   padding: 0;
   background-color: #6D6D6D;
+  height: 60px;
+  font-size: 22px;
+  line-height: 250%;
 }
 
 .main-nav li a:hover:not(.active){
@@ -41,12 +44,60 @@ ul{
   list-style: none;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.info .headshot{
+  padding-top: 30px;
+  width: 25%;
+  height: 25%;
+  margin: auto;
+}
+
 .fa{
    color: #A2EAE1;
  }
 
+ .contact-link-parent {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+ }
+
 .contact-links{
   position: absolute;
+  width: 100%;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+}
+
+ p{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.project img {
+  margin: auto;
+}
+
+.project-links{
+  display: flex;
+}
+
+.project-link{
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+.project-stack{
+  text-align: center;
+  padding: 0px;
 }
 
 @media (max-width: 576px){
@@ -55,6 +106,11 @@ ul{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 90px;
+    font-size: 20px;
+    line-height: 150%;
   }
 
   .main-nav{
@@ -72,9 +128,17 @@ ul{
     width: 100%;
 }
 
+.info .headshot{
+  width: 50%;
+}
+
   .project{
     display: flex;
     flex-direction: column;
+  }
+
+  .pokemon{
+    width: 75%;
   }
 
   .project-links{
@@ -84,6 +148,7 @@ ul{
   .project-link{
     justify-content: space-around;
     width: 100%;
+    text-align: center;
   }
 
   .project-stack{
