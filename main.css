@@ -3,6 +3,7 @@
 }
 body {
   background-color: #050505;
+  font-family: 'Rubik', sans-serif;
   color: #34D1BF;
   padding: 0px;
   margin: 0px;
@@ -79,6 +80,7 @@ ul{
  p{
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 18px;
 }
 
 .project img {
