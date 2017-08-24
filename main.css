@@ -2,19 +2,31 @@
     box-sizing: border-box;
 }
 body {
-  background-color: #B3E9E4;
-  font-family: 'Rubik', sans-serif;
-  color: #114843;
-  padding: 0px;
-  margin: 0px;
+  font-family: 'Old Standard TT', serif;
+  background-color: #001D28;
+  color: #73CCEF;
+  padding: 0;
+  margin:0;
+}
+header{
+  font-family: 'Merienda One', cursive;
+  background-color: #73CCEF;
+  color: #E7F6FC;
+  position: absolute;
+  width: 100%;
 }
 
 h1,h2,h3,h4,p{
   text-align: center;
 }
 
+h2{
+  color: #E7F6FC;
+}
+
 a{
-  color: #01080F;
+  color: #E7F6FC;
+  text-decoration: none;
 }
 
 .main-nav{
@@ -27,7 +39,6 @@ a{
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #A2AAB0;
   height: 60px;
   font-size: 22px;
   line-height: 250%;
@@ -51,14 +62,18 @@ ul{
 }
 
 .info .headshot{
-  padding-top: 30px;
+  padding-top: 200px;
   width: 25%;
   height: 25%;
   margin: auto;
 }
 
+.about{
+  font-family: 'Merienda One', cursive;
+}
+
 .fa{
-   color: #01080F;
+   color: #E7F6FC;
  }
 
  .contact-link-parent {
@@ -70,6 +85,7 @@ ul{
 .contact-links{
   position: absolute;
   width: 100%;
+  background-color: #73CCEF;
 }
 
 .project{
@@ -80,7 +96,7 @@ ul{
  p{
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .project img {
@@ -95,11 +111,13 @@ ul{
   justify-content: space-around;
   width: 100%;
   text-align: center;
+  font-size: 18px;
 }
 
 .project-stack{
   text-align: center;
   padding: 0px;
+  font-size: 20px;
 }
 
 @media (max-width: 576px){
@@ -132,6 +150,7 @@ ul{
 
 .info .headshot{
   width: 50%;
+  padding-top: 250px;
 }
 
   .project{
