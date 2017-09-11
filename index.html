@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +11,24 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
   </script>
   <script>
-    $(document).ready(function(){
-      $("#link1").click(function(){
-          $path=$("#info").offset().top;
-          $('body').animate({scrollTop:$path},1000);
+    $(document).ready(function() {
+      $("#link1").click(function() {
+        $path = $("#info").offset().top;
+        $('body').animate({
+          scrollTop: $path
+        }, 1000);
       });
-      $("#link2").click(function(){
-          $path=$("#work").offset().top;
-          $('body').animate({scrollTop:$path},1000);
+      $("#link2").click(function() {
+        $path = $("#work").offset().top;
+        $('body').animate({
+          scrollTop: $path
+        }, 1000);
       });
-      $("#link3").click(function(){
-          $path=$("#contact-links").offset().top;
-          $('body').animate({scrollTop:$path},1000);
+      $("#link3").click(function() {
+        $path = $("#contact-links").offset().top;
+        $('body').animate({
+          scrollTop: $path
+        }, 1000);
       });
     });
   </script>
@@ -45,7 +52,8 @@
     <img class="headshot" src="Images/Headshot.jpg" alt="Patrice White headshot">
 
     <p class="about" id="about">
-      Hi, I'm Patrice White, a full-stack web developer from Atlanta, GA. I use React and Node.js to build web apps that will liven up your life and solve problems that affect me. Outside of coding I enjoy playing basketball, reading, and visiting new ramen shops.
+      Hi, I'm Patrice White, a full-stack web developer from Atlanta, GA. I use React and Node.js to build web apps that will liven up your life and solve problems that affect me. Outside of coding I enjoy playing basketball, reading, and visiting new ramen
+      shops.
     </p>
   </div>
   <section class="work" id="work">
@@ -94,6 +102,9 @@
         <li class="project-stack-item">
           Deployment: Heroku, Travis
         </li>
+        <li class="project-stack-item">
+          Testing: Chai, Chai-http, Mocha
+        </li>
       </ul>
       <ul class="project-links">
         <li class="project-link project-link-live">
@@ -122,6 +133,9 @@
         <li class="project-stack-item">
           Deployment: Heroku, Travis
         </li>
+        <li class="project-stack-item">
+          Testing: Chai, Chai-http, Mocha
+        </li>
       </ul>
       <ul class="project-links">
         <li class="project-link project-link-live">
@@ -136,8 +150,8 @@
       <h2>How do I Vim?</h2>
       <img class="project-image vim" src="Images/Vim.png" alt="VIM screenshot">
       <p class="project-description">
-        Have you ever wanted to use the vim text editor but no idea how? This is the app for you. Using a space repetition algorithm, it will teach you all the commands you will need to know to easily maneuver through the vim editor. All you have to do is sign-up/login with
-        your google email and start learning.
+        Have you ever wanted to use the vim text editor but no idea how? This is the app for you. Using a space repetition algorithm, it will teach you all the commands you will need to know to easily maneuver through the vim editor. All you have to do is sign-up/login
+        with your google email and start learning.
       </p>
       <ul class="project-stack">
         <h3>Technologies</h3>
@@ -157,6 +171,36 @@
         </li>
         <li class="project-link project-link-github">
           <a href="https://github.com/thinkful-c11/thomas-patrice-spaced-repetition" target="_blank">Source code</a>
+        </li>
+      </ul>
+    </section>
+    <section class="project">
+      <h2>Book-thing.io</h2>
+      <img class="project-image book" src="" alt="Book screenshot">
+      <p class="project-description">
+        A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them. We wanted a book recommendation app that was community driven. Books and lists are all created by the users.
+      </p>
+      <ul class="project-stack">
+        <h3>Technologies</h3>
+        <li class="project-stack-item">
+          FrontEnd: React, Redux, React-Router, CSS, JSX
+        </li>
+        <li class="project-stack-item">
+          BackEnd: NodeJs, ElephantSql, Express, Google oAuth, Knex, Postgress
+        </li>
+        <li class="project-stack-item">
+          Deployment: Heroku, Travis
+        </li>
+        <li class="project-stack-item">
+          Testing: Chai, Chai-http, Jest, Mocha
+        </li>
+      </ul>
+      <ul class="project-links">
+        <li class="project-link project-link-live">
+          <a href="https://book-thing.herokuapp.com/" target="_blank">Live demo</a>
+        </li>
+        <li class="project-link project-link-github">
+          <a href="https://github.com/thinkful-c11/book-thing.io" target="_blank">Source code</a>
         </li>
       </ul>
     </section>
