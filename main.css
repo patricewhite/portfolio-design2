@@ -10,9 +10,10 @@ body {
   margin: 0px;
 }
 
-.grey {
+
+/*.grey {
   background-color: #738389;
-}
+}*/
 
 header {
   font-family: 'Merienda One', cursive;
@@ -27,12 +28,14 @@ header {
 }
 
 header h2 {
-  padding-top: 10%;
   height: 50%;
+  margin-top: 8%;
+  font-size: 35px;
 }
 
 header h1 {
-  height: 70%;
+  margin-top: 10%;
+  font-size: 60px
 }
 
 h3, h4, p {
@@ -80,6 +83,7 @@ ul {
 
 .info {
   display: flex;
+  margin-bottom: 5%;
   /*flex-direction: row;*/
   /*height: 100vh;*/
 }
@@ -121,10 +125,20 @@ ul {
   color: #E7F6FC;
 }
 
+.section-name {
+  text-align: center;
+}
+
 .project {
   display: flex;
   height: 100vh;
   flex-flow: row wrap;
+  border: 22px solid;
+  background-color: #738389;
+  border-radius: 35px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .project-name {
@@ -171,6 +185,7 @@ p {
 
 .next {
   margin: auto;
+  display: none;
 }
 
 .contact-link-parent {
@@ -187,7 +202,7 @@ p {
 }
 
 .contact-links h2 {
-  text-align: : center;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
