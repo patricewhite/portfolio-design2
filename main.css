@@ -38,7 +38,7 @@ header h1 {
   font-size: 60px
 }
 
-h3, h4, p {
+h3, h4 {
   text-align: center;
 }
 
@@ -84,8 +84,7 @@ ul {
 .info {
   display: flex;
   margin-bottom: 5%;
-  /*flex-direction: row;*/
-  /*height: 100vh;*/
+  border-bottom: 5px solid white;
 }
 
 .about-label {
@@ -100,7 +99,6 @@ ul {
 
 .about-label h2 {
   color: #73CCEF;
-  /*width: 50%;*/
 }
 
 .about-info {
@@ -110,15 +108,12 @@ ul {
 }
 
 .about-info .headshot {
-  width: 50%;
-  height: 50%;
   margin-left: 60px;
   margin-top: 5%;
 }
 
 .about-info .about {
   font-family: 'Merienda One', cursive;
-  text-align: left;
 }
 
 .fa {
@@ -154,6 +149,10 @@ ul {
   justify-content: center;
   width: 50%;
   margin: auto;
+}
+
+.project-description {
+  text-align: center;
 }
 
 p {
