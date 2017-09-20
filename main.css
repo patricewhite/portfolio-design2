@@ -10,11 +10,6 @@ body {
   margin: 0px;
 }
 
-
-/*.grey {
-  background-color: #738389;
-}*/
-
 header {
   font-family: 'Merienda One', cursive;
   background-color: #73CCEF;
@@ -56,7 +51,6 @@ a {
   padding: 0;
   margin: 0;
   justify-content: space-around;
-  /*height: 20%;*/
 }
 
 .top-nav {
@@ -104,6 +98,7 @@ ul {
 .about-info {
   align-items: flex-start;
   justify-content: center;
+  height: 100vh;
   width: 50%;
 }
 
@@ -162,7 +157,7 @@ p {
 }
 
 .project img {
-  width: 450px;
+  width: 75%;
 }
 
 .project-links {
@@ -182,11 +177,6 @@ p {
   font-size: 20px;
 }
 
-.next {
-  margin: auto;
-  display: none;
-}
-
 .contact-link-parent {
   display: flex;
   justify-content: space-around;
@@ -204,7 +194,16 @@ p {
   text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
+  header h1, h2 {
+    margin-left: 5%;
+  }
+  header h1 {
+    margin-top: 10%;
+  }
+  header h2 {
+    margin-top: 40%;
+  }
   .top-nav {
     display: flex;
     justify-content: center;
@@ -229,25 +228,36 @@ p {
   }
   .about-info .headshot {
     width: 150px;
-    margin: 30px 0 10px 0;
+    margin: 10% 0 0 10%;
+  }
+  .info {
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .about-label {
-    flex-direction: column;
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
   }
   .about-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 0 0 100%;
   }
   .project {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
   }
-  .pokemon {
+  .project-name {
+    flex: 1;
+    display: flex;
+    align-self: center;
+  }
+  .project img {
     width: 75%;
+  }
+  .project-details {
+    flex: 0 0 100%;
   }
   .project-links {
     display: flex;
