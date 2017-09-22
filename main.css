@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  font-family: 'Merienda One', cursive;
+  font-family: 'Ovo', serif;
   background-color: #73CCEF;
   color: #E7F6FC;
   height: 100vh;
@@ -24,6 +24,7 @@ header {
 }
 
 header h2 {
+  font-family: 'Ovo', serif;
   height: 50%;
   margin-top: 8%;
   font-size: 35px;
