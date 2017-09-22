@@ -71,7 +71,7 @@ a {
 }
 
 .main-nav li a:hover {
-  background-color: #001016;
+  color: #000B0F;
 }
 
 ul {
@@ -193,7 +193,7 @@ p {
   padding: 0;
 }
 
-.project-links li a:hover {
+.project-links li:hover {
   background-color: #000B0F;
   padding: 2%;
 }
@@ -227,7 +227,7 @@ p {
 }
 
 .contact-links ul i:hover {
-  background-color: white;
+  color: white;
   padding: 10%;
 }
 
