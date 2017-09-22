@@ -165,8 +165,7 @@ p {
 .project-stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 5% 0px;
+  padding: 5%;
 }
 
 .icon_info {
@@ -178,7 +177,7 @@ p {
 }
 
 .project-stack-item {
-  flex: 1;
+  padding: 5%;
 }
 
 .project-stack-item:hover .icon_info {
