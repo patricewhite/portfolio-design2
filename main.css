@@ -199,6 +199,7 @@ p {
 
 .project-links {
   display: flex;
+  padding: 0;
 }
 
 .project-links li a:hover {
@@ -209,6 +210,8 @@ p {
 .project-link {
   width: 100%;
   font-size: 18px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-link-parent {
