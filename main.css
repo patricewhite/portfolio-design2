@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Nunito', Sans-Serif;
   background-color: #000B0F;
   color: #73CCEF;
   padding: 0px;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  font-family: 'Ovo', serif;
+  font-family: 'Libre Baskerville', Serif;
   background-color: #73CCEF;
   color: #E7F6FC;
   height: 100vh;
@@ -24,7 +24,7 @@ header {
 }
 
 header h2 {
-  font-family: 'Ovo', serif;
+  /*font-family: 'Libre Baskerville', Serif;*/
   height: 50%;
   margin-top: 8%;
   font-size: 35px;
@@ -36,7 +36,7 @@ header h1 {
 }
 
 h2, h3 {
-  font-family: 'Merienda One', cursive;
+  font-family: 'Libre Baskerville', Serif;
 }
 
 h3 {
@@ -106,10 +106,6 @@ ul {
   padding-left: 5%;
   margin-top: 5%;
   width: 65%;
-}
-
-.about-info .about {
-  font-family: 'Merienda One', cursive;
 }
 
 .about-info p {
@@ -203,7 +199,7 @@ p {
 }
 
 .project-links li a:hover {
-  background-color: #73CCEF;
+  background-color: #000B0F;
   padding: 2%;
 }
 
@@ -212,6 +208,10 @@ p {
   font-size: 18px;
   display: flex;
   justify-content: space-around;
+  margin-right: 5%;
+  background: #73CCEF;
+  border-radius: 50%;
+  padding: 5%;
 }
 
 .contact-link-parent {
