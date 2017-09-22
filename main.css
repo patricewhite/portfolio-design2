@@ -112,10 +112,6 @@ ul {
   padding-left: 5%;
 }
 
-.fa {
-  color: #E7F6FC;
-}
-
 .section-name {
   text-align: center;
 }
@@ -225,7 +221,6 @@ p {
   position: absolute;
   width: 100%;
   background-color: #73CCEF;
-  padding: 5%;
 }
 
 .contact-links h2 {
@@ -234,8 +229,18 @@ p {
 }
 
 .contact-links ul i:hover {
-  background-color: #001016;
+  background-color: white;
   padding: 10%;
+}
+
+.fa {
+  color: #000B0F;
+}
+
+.contact-links p {
+  color: #E7F6FC;
+  text-align: center;
+  padding-top: 5%;
 }
 
 @media (max-width: 720px) {
