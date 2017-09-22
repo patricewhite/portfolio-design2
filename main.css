@@ -154,6 +154,7 @@ ul {
   justify-content: center;
   width: 50%;
   margin: auto;
+  padding: 5%;
 }
 
 .project-description {
@@ -169,6 +170,27 @@ p {
   width: 75%;
 }
 
+.project-stack {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon_info {
+  display: none;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+  font: 12px;
+}
+
+.project-stack-item:hover .icon_info {
+  display: block;
+}
+
+.dev {
+  font-size: 4em;
+}
+
 .project-links {
   display: flex;
 }
@@ -179,27 +201,8 @@ p {
 }
 
 .project-link {
-  justify-content: space-around;
   width: 100%;
   font-size: 18px;
-}
-
-.project-stack {
-  text-align: left;
-  padding: 0px;
-  font-size: 20px;
-}
-
-.project-stack-item i {
-  padding-right: 5%;
-}
-
-.project-stack-item {
-  text-align: center;
-}
-
-.dev {
-  font-size: 2em;
 }
 
 .contact-link-parent {
