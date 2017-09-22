@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Old Standard TT', serif;
-  background-color: #001D28;
+  background-color: #001016;
   color: #73CCEF;
   padding: 0px;
   margin: 0px;
@@ -15,6 +15,7 @@ header {
   background-color: #73CCEF;
   color: #E7F6FC;
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,12 +34,17 @@ header h1 {
   font-size: 60px
 }
 
-h3, h4 {
+h2, h3 {
+  font-family: 'Merienda One', cursive;
+}
+
+h3 {
   text-align: center;
 }
 
 h2 {
   color: #E7F6FC;
+  font-size: 35px;
 }
 
 a {
@@ -57,18 +63,14 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 20%;
+  /*height: 20%;*/
   font-size: 22px;
   line-height: 250%;
   position: relative;
 }
 
-.main-nav li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.main-nav li a.active {
-  background-color: #4CAF50;
+.main-nav li a:hover {
+  background-color: #001016;
 }
 
 ul {
@@ -87,7 +89,6 @@ ul {
   background-color: white;
   display: flex;
   align-items: center;
-  height: 100vh;
   min-height: 800px;
 }
 
@@ -96,19 +97,24 @@ ul {
 }
 
 .about-info {
+  background-color: #001D28;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
   width: 50%;
 }
 
 .about-info .headshot {
-  margin-left: 60px;
+  padding-left: 5%;
   margin-top: 5%;
+  width: 65%;
 }
 
 .about-info .about {
   font-family: 'Merienda One', cursive;
+}
+
+.about-info p {
+  padding-left: 5%;
 }
 
 .fa {
@@ -121,14 +127,18 @@ ul {
 
 .project {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-flow: row wrap;
   border: 22px solid;
-  background-color: #738389;
+  background-color: rgba(115, 204, 239, 0.2);
   border-radius: 35px;
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.section-name {
+  font-size: 60px;
 }
 
 .project-name {
@@ -147,12 +157,11 @@ ul {
 }
 
 .project-description {
-  text-align: center;
+  text-align: left;
 }
 
 p {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 5%;
   font-size: 20px;
 }
 
@@ -164,17 +173,33 @@ p {
   display: flex;
 }
 
+.project-links li a:hover {
+  background-color: #73CCEF;
+  padding: 2%;
+}
+
 .project-link {
   justify-content: space-around;
   width: 100%;
-  text-align: center;
   font-size: 18px;
 }
 
 .project-stack {
-  text-align: center;
+  text-align: left;
   padding: 0px;
   font-size: 20px;
+}
+
+.project-stack-item i {
+  padding-right: 5%;
+}
+
+.project-stack-item {
+  text-align: center;
+}
+
+.dev {
+  font-size: 2em;
 }
 
 .contact-link-parent {
@@ -188,21 +213,29 @@ p {
   position: absolute;
   width: 100%;
   background-color: #73CCEF;
+  padding: 5%;
 }
 
 .contact-links h2 {
   text-align: center;
+  padding-bottom: 5%;
+}
+
+.contact-links ul i:hover {
+  background-color: #001016;
+  padding: 10%;
 }
 
 @media (max-width: 720px) {
   header h1, h2 {
-    margin-left: 5%;
+    text-align: center;
   }
   header h1 {
-    margin-top: 10%;
+    padding-top: 10%;
   }
   header h2 {
-    margin-top: 40%;
+    padding-top: 25%;
+    margin-top: 0;
   }
   .top-nav {
     display: flex;
@@ -227,8 +260,10 @@ p {
     width: 100%;
   }
   .about-info .headshot {
-    width: 150px;
-    margin: 10% 0 0 10%;
+    width: 35%;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
   }
   .info {
     align-content: center;
@@ -236,17 +271,17 @@ p {
     flex-wrap: wrap;
   }
   .about-label {
-    flex: 1;
-    display: flex;
-    align-self: center;
+    display: none;
   }
   .about-info {
     flex: 0 0 100%;
   }
+  p {
+    padding-left: 5%;
+  }
   .project {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
   }
   .project-name {
     flex: 1;
