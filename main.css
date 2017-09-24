@@ -105,7 +105,7 @@ ul {
 .about-info .headshot {
   padding-left: 5%;
   margin-top: 5%;
-  width: 65%;
+  width: 50%;
 }
 
 .about-info p {
@@ -219,6 +219,7 @@ p {
   position: absolute;
   width: 100%;
   background-color: #73CCEF;
+  font-family: 'Libre Baskerville', Serif;
 }
 
 .contact-links h2 {
@@ -267,16 +268,7 @@ p {
     flex-direction: column;
     align-items: center;
   }
-  .contact-link-parent {
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
-  }
-  .contact-links {
-    width: 100%;
-  }
   .about-info .headshot {
-    width: 35%;
     display: block;
     margin: auto;
     padding-top: 5%;
@@ -326,6 +318,16 @@ p {
   }
   .project-stack-item {
     flex: 1;
-    +
+  }
+  .contact-link-parent {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  .contact-links {
+    width: 100%;
+  }
+  .contact-links p {
+    padding-left: 0px;
   }
 }
