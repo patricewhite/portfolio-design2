@@ -79,36 +79,18 @@ ul {
 }
 
 .info {
-  display: flex;
-}
-
-.about-label {
-  justify-content: center;
-  width: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  min-height: 800px;
-}
-
-.about-label h2 {
-  color: #73CCEF;
-}
-
-.about-info {
   background-color: #001D28;
-  align-items: flex-start;
-  justify-content: center;
-  width: 50%;
+  padding: 10px;
 }
 
-.about-info .headshot {
-  padding-left: 5%;
-  margin-top: 5%;
-  width: 50%;
+.info .headshot {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  ;
 }
 
-.about-info p {
+.info p {
   padding-left: 5%;
 }
 
@@ -266,22 +248,6 @@ p {
   .main-nav {
     flex-direction: column;
     align-items: center;
-  }
-  .about-info .headshot {
-    display: block;
-    margin: auto;
-    padding-top: 5%;
-  }
-  .info {
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-  .about-label {
-    display: none;
-  }
-  .about-info {
-    flex: 0 0 100%;
   }
   p {
     padding-left: 5%;
