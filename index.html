@@ -14,21 +14,21 @@
   <script>
     $(document).ready(function() {
       $("#link1").click(function() {
-        $path=$("#info").offset().top;
+        $path = $("#info").offset().top;
         $('html,body').animate({
-          scrollTop:$path
+          scrollTop: $path
         }, 1000);
       });
       $("#link2").click(function() {
-        $path=$("#work").offset().top;
+        $path = $("#work").offset().top;
         $('html,body').animate({
-          scrollTop:$path
+          scrollTop: $path
         }, 1000);
       });
       $("#link3").click(function() {
-        $path=$("#contact-links").offset().top;
+        $path = $("#contact-links").offset().top;
         $('html,body').animate({
-          scrollTop:$path
+          scrollTop: $path
         }, 2000);
       });
     });
@@ -58,7 +58,7 @@
   </div>
   <section class="work" id="work">
     <h2 class="section-name">Projects</h2>
-    <section id="Poke" class="project">
+    <section class="project" id="Poke">
       <div class="project-name ">
         <h2>Gotta Know 'Em All</h2>
         <img class="project-image" src="Images/Pokemon.jpg" alt="Gotta Know 'Em All screenshot">
@@ -68,6 +68,8 @@
           I’m a complete novice when it comes to Pokemon and I thought it would be a great chance to learn all about Pokemon. Along with a teammate, I used JQuery and the Poke API to create a web application that provides you with the abilities and statistics for
           whichever Pokemon or Pokemon ability you type in. Now that I have this app I understand why my friends are so happy to catch certain Pokemon when they are playing Pokemon Go.
         </p>
+      </div>
+      <div class="project-tech-links">
         <ul class="project-stack">
           <li class="project-stack-item">
             <i class="dev devicon-css3-plain-wordmark colored"></i>
