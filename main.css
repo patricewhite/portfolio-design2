@@ -15,7 +15,7 @@ header {
   background-color: #73CCEF;
   background-image: url("Images/header2.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
   min-height: 600px;
   width: 100%;
@@ -158,8 +158,17 @@ ul {
   color: white;
 }
 
+.work {
+  padding: 10px;
+}
+
 .section-name {
   text-align: center;
+  font-size: 60px;
+}
+
+.a {
+  color: white;
 }
 
 .project {
@@ -172,14 +181,6 @@ ul {
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
-}
-
-.section-name {
-  font-size: 60px;
-}
-
-.a {
-  color: white;
 }
 
 .project-name {
