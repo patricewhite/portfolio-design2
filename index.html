@@ -13,6 +13,26 @@
   </script>
   <script>
     $(document).ready(function() {
+      const offset = 250;
+      const duration = 300;
+      const limiter = 720;
+      $(window).scroll(function() {
+        if ($(window).width() > limiter) {
+          if ($(this).scrollTop() > offset) {
+            $(".back-to-top").fadeIn(duration);
+          } else {
+            $(".back-to-top").fadeOut(duration);
+          }
+        }
+      });
+
+      $(".back-to-top").click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, duration);
+        return false;
+      });
       $("#link1").click(function() {
         $path = $("#info").offset().top;
         $('html,body').animate({
@@ -43,8 +63,9 @@
 </head>
 
 <body>
+  <a href="#top" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></i></a>
   <header>
-    <nav class="top-nav">
+    <nav class="top-nav" id="#top">
       <ul class="main-nav">
         <li class="main-nav-link"><a href="#info" id="link1">About</a></li>
         <li class="main-nav-link"><a href="#work" id="link2">Projects</a></li>
@@ -53,9 +74,7 @@
     </nav>
     <h1>Patrice White</h1>
     <h2>Full stack web developer with a passion for testing</h2>
-    <!-- <div class="bounce"> -->
     <a href="#info" class="bounce" id="link4"><i class="fa fa-arrow-down fa-4x arrow" aria-hidden="true"></i></a>
-    <!-- </div> -->
   </header>
   <div class="info" id="info">
     <h2 class="section-name a">About Me</h2>
