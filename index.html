@@ -25,6 +25,12 @@
           scrollTop: $path
         }, 1000);
       });
+      $("#link4").click(function() {
+        $path = $("#info").offset().top;
+        $('html,body').animate({
+          scrollTop: $path
+        }, 1000);
+      });
       $("#link3").click(function() {
         $path = $("#contact-links").offset().top;
         $('html,body').animate({
@@ -47,9 +53,9 @@
     </nav>
     <h1>Patrice White</h1>
     <h2>Full stack web developer with a passion for testing</h2>
-    <div class="bounce">
-      <a href="#info" id="link1"><i class="fa fa-arrow-down fa-4x arrow" aria-hidden="true"></i></a>
-    </div>
+    <!-- <div class="bounce"> -->
+    <a href="#info" class="bounce" id="link4"><i class="fa fa-arrow-down fa-4x arrow" aria-hidden="true"></i></a>
+    <!-- </div> -->
   </header>
   <div class="info" id="info">
     <h2 class="section-name a">About Me</h2>
@@ -101,10 +107,10 @@
         </ul>
         <ul class="project-links">
           <li class="project-link project-link-live">
-            <a href="https://book-thing.herokuapp.com/" target="_blank">Live demo</a>
+            <a href="https://book-thing.herokuapp.com/" target="_blank">Live Demo</a>
           </li>
           <li class="project-link project-link-github">
-            <a href="https://github.com/thinkful-c11/book-thing.io" target="_blank">Source code</a>
+            <a href="https://github.com/thinkful-c11/book-thing.io" target="_blank">Source Code</a>
           </li>
         </ul>
       </div>
