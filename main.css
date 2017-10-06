@@ -16,13 +16,12 @@ body {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  width: 70px;
+  width: 90px;
   height: 70px;
   z-index: 100;
   display: none;
   text-decoration: none;
   transition: all 0.3s ease;
-  padding-right: 20px;
 }
 
 .back-to-top i {
