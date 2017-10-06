@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Nunito', Sans-Serif;
-  background-color: #000B0F;
-  color: #73CCEF;
+  background-color: rgba(191, 231, 247, 0.4);
+  color: #001D28;
   padding: 0px;
   margin: 0px;
 }
@@ -13,28 +13,28 @@ body {
 header {
   font-family: 'Libre Baskerville', Serif;
   background-color: #73CCEF;
-  color: #E7F6FC;
+  background-image: url("Images/header2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 100vh;
   min-height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 header h2 {
-  height: 50%;
   margin-top: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
+  background-color: black;
+  color: white;
 }
 
 header h1 {
   margin-top: 10%;
   font-size: 60px;
-  padding-left: 5%;
-  padding-right: 5%;
+  background-color: black;
+  color: white;
 }
 
 h2, h3 {
@@ -46,7 +46,6 @@ h3 {
 }
 
 h2 {
-  color: #E7F6FC;
   font-size: 35px;
   text-align: center;
 }
@@ -59,9 +58,15 @@ a {
 
 .main-nav {
   display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-top: -8px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav li {
+  padding-right: 20px;
 }
 
 .top-nav {
@@ -74,11 +79,66 @@ a {
 }
 
 .main-nav li a:hover {
-  color: #000B0F;
+  color: rgba(191, 231, 247, 0.4);
 }
 
 ul {
   list-style: none;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .info {
@@ -95,6 +155,7 @@ ul {
 
 .info p {
   padding-left: 5%;
+  color: white;
 }
 
 .section-name {
@@ -106,7 +167,7 @@ ul {
   min-height: 100vh;
   flex-flow: row wrap;
   border: 22px solid;
-  background-color: rgba(115, 204, 239, 0.2);
+  background-color: #BFE7F7;
   border-radius: 35px;
   margin-bottom: 5%;
   margin-left: 5%;
@@ -115,6 +176,10 @@ ul {
 
 .section-name {
   font-size: 60px;
+}
+
+.a {
+  color: white;
 }
 
 .project-name {
@@ -184,13 +249,13 @@ p {
 }
 
 .project-links li:hover {
-  background-color: #000B0F;
+  background-color: #738389;
 }
 
 .project-link {
   font-size: 18px;
   display: flex;
-  background: #73CCEF;
+  background: #001D28;
   border-radius: 55%;
   padding: 30px;
 }
@@ -224,6 +289,11 @@ p {
   color: #000B0F;
 }
 
+.arrow {
+  color: white;
+  padding-top: 250%;
+}
+
 .contact-links p {
   color: #E7F6FC;
   text-align: center;
@@ -232,29 +302,39 @@ p {
 }
 
 @media (max-width: 720px) {
+  header {
+    background-image: none;
+  }
   header h1, h2 {
     text-align: center;
   }
   header h1 {
     padding-top: 10%;
+    background-color: #73CCEF;
   }
   header h2 {
     padding-top: 25%;
     margin-top: 0;
+    background-color: #73CCEF;
   }
   .top-nav {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
     height: 90px;
     font-size: 20px;
-    line-height: 150%;
+    line-height: 150%;*/
+    display: none;
   }
-  .main-nav {
+  /*.main-nav {
     flex-direction: column;
     align-items: center;
+    position: absolute;
+  }*/
+  .arrow {
+    visibility: hidden;
   }
   p {
     padding-left: 5%;
