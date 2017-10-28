@@ -52,14 +52,14 @@ header {
 
 header h2 {
   margin-top: 8%;
-  background-color: black;
+  background-color: rgba(7, 23, 49, 0.6);
   color: white;
 }
 
 header h1 {
-  margin-top: 10%;
+  margin-top: 15%;
   font-size: 60px;
-  background-color: black;
+  background-color: rgba(7, 23, 49, 0.6);
   color: white;
 }
 
@@ -258,7 +258,7 @@ p {
   font-size: 20px;
 }
 
-.project img {
+.project-image {
   width: 300px;
 }
 
@@ -291,6 +291,11 @@ p {
 
 .dev {
   font-size: 4em;
+}
+
+.dev-img {
+  height: 4em;
+  width: 4em;
 }
 
 .project-links {
@@ -329,6 +334,7 @@ p {
 
 .contact-links h2 {
   padding-bottom: 5%;
+  color: #E7F6FC;
 }
 
 .contact-links ul i:hover {
@@ -341,7 +347,7 @@ p {
 
 .arrow {
   color: white;
-  padding-top: 250%;
+  padding-top: 75%;
 }
 
 .contact-links p {
@@ -352,8 +358,8 @@ p {
 }
 
 @media (max-width: 720px) {
-  header {
-    background-image: none;
+  .back-to-top {
+    display: none;
   }
   h2 {
     font-size: 25px;
@@ -362,13 +368,13 @@ p {
     text-align: center;
   }
   header h1 {
-    padding-top: 10%;
-    background-color: #73CCEF;
+    margin-top: 30%;
+    /*background-color: #73CCEF;*/
   }
   header h2 {
-    padding-top: 25%;
-    margin-top: 0;
-    background-color: #73CCEF;
+    /*padding-top: 25%;*/
+    margin-top: 15%;
+    /*background-color: #73CCEF;*/
   }
   .arrow {
     visibility: hidden;
@@ -406,7 +412,7 @@ p {
     display: flex;
     align-self: center;
   }
-  .project img {
+  .project-image {
     width: 55%;
     display: block;
     margin: auto;
@@ -430,6 +436,13 @@ p {
   }
   .project-stack-item {
     flex: 1;
+  }
+  .dev {
+    font-size: 3em;
+  }
+  .dev-img {
+    height: 3em;
+    width: 3em;
   }
   .contact-link-parent {
     display: flex;
