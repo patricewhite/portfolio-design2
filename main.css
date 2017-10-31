@@ -174,7 +174,7 @@ ul {
 .info {
   background-color: #001D28;
   padding: 10px;
-  min-height: 600px;
+  min-height: 800px;
 }
 
 .content {
@@ -283,7 +283,6 @@ p {
 .project-stack-item {
   margin: 2%;
 }
-
 
 /*.project-stack-item:hover .icon_info {
   display: block;
